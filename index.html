@@ -25,43 +25,25 @@
 </head>
 <body>
   <div class="card">
-    <h1>Click to Download a File</h1>
-    <p class="hint">Two easy ways: a direct link (for files you already have on your server/folder) and a button that generates a file on the fly.</p>
-
+   
     <div class="sep"></div>
 
     <section class="row">
-      <h2 style="margin:.25rem 0 .25rem;font-size:1.2rem;">1) Direct link (recommended)</h2>
-      <p class="small">Place your file (e.g., <code>my-report.pdf</code>) in the <strong>same folder</strong> as this HTML (or adjust the path). Most browsers will download it because of the <code>download</code> attribute.</p>
-      <a class="download-link" href="./dbeaver.zip" download>
+         <a class="download-link" href="./dbeaver.zip" download>
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 1 1 8.707 11.293L11 13.586V4a1 1 0 0 1 1-1zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"/></svg>
         Download <span aria-hidden="true">Dbeaver</span>
       </a>
-      <p class="small">Change the <code>href</code> to your file path (e.g., <code>files/photo.jpg</code>) and the text label too.</p>
-    </section>
-
-    <div class="sep"></div>
-
+     </section>
+     <br>
     <section class="row">
-      <h2 style="margin:.25rem 0 .25rem;font-size:1.2rem;">2) Generate and download (JavaScript)</h2>
-      <p class="small">This creates a text file in the browser and downloads it—useful if you don’t already have a file saved on the server.</p>
-      <button id="makeFileBtn" type="button">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.586A2 2 0 0 0 15 20.414L20.414 15A2 2 0 0 0 21 13.586V5a2 2 0 0 0-2-2H5zm2 4h10v2H7V7zm0 4h6v2H7v-2zm0 4h4v2H7v-2z"/></svg>
-        Download sample.txt
-      </button>
-      <p class="small">You can change the filename and contents in the script below.</p>
-    </section>
+        <a class="download-link" href="./flux.zip" download>
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 1 1 8.707 11.293L11 13.586V4a1 1 0 0 1 1-1zm-7 14a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"/></svg>
+        Download <span aria-hidden="true">Flux</span>
+      </a>
+     </section>
 
     <div class="sep"></div>
-    <details>
-      <summary class="small">Troubleshooting / tips</summary>
-      <ul class="small">
-        <li>The <code>download</code> attribute can be ignored for cross-origin links. Keep files on the same origin for best results.</li>
-        <li>If your server sets <code>Content-Disposition: attachment</code>, browsers will download even without the attribute.</li>
-        <li>Binary files are fine; the browser won't corrupt them—it just saves what the server sends.</li>
-      </ul>
-    </details>
-  </div>
+
 
   <script>
     // Button: generate a text file in the browser and download it
